@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/pxfuel.jpg);
+    background-image: url(images/bg1.jpg);
     background-size: cover;
     background-position: center;
 
@@ -352,7 +352,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/pxfuel.jpg);
+        background-image: url(images/bg1.jpg);
     }
     .header_text{
         margin-top: 100%;
@@ -360,7 +360,7 @@ nav .fa-solid{
 
     }
     .header_text h1{
-        font-size: 30px;
+        font-size: 40px;
 
     }
     nav .fa-solid{
