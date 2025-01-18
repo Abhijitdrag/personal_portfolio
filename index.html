@@ -7,14 +7,13 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/e7448fa32c.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
     <div id="header">
         <div id="container">
             <nav>
-                <img src="images/logo1.jpg" class="logo" width="100" height="100" >
-                <ul id="sidemenu()">
+                <img src="images/logo1.jpg" class="logo" width="100" height="100">
+                <ul id="sidemenu"> <!-- Corrected id attribute -->
                     <li><a href="#header">home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Project</a></li>
@@ -32,184 +31,159 @@
         </div>
     </div>
     <!-------------about----------->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                 <img src="images/abhi_img.jpeg"  >
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About me</h1>
-                <p>As a Computer Engineering (BE) with a strong foundation in both hardware and software systems, I am passionate about building innovative solutions to real-world challenges. My academic journey has equipped me with comprehensive knowledge in areas such as software development, computer architecture, embedded systems, and networking. </p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/abhi_img.jpeg">
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Programming Languages</span><br>Python, Java, C, C++</li>
-                        <li><span>Algorithms and Data Structures</span><br>Strong understanding of algorithms (e.g., searching, sorting) and data structures (e.g., arrays, linked lists, trees, hash maps).</li>
-                        <li><span>Problem Solving and Analytical Skills</span><br>Ability to break down complex problems into manageable components and find efficient solutions.</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>June -July 2023</span><br>Internship At Softcrowd Technologies</li>
-                       <!---- <li><span>2021-22</span><br>Engineer interfaces</li>-->
-                       <!---- <li><span>2021-23</span><br>Engineer interfaces</li>-->
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2021-2024</span><br>Diploma in Computer Technology</li>
-                        <li><span>Pursuing</span><br>BE in Computer Engineering</li>
-                        <!--<li><span>2022</span><br>Engineer interfaces</li>-->
-                    </ul>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>As a Computer Engineering (BE) with a strong foundation in both hardware and software systems, I am passionate about building innovative solutions to real-world challenges. My academic journey has equipped me with comprehensive knowledge in areas such as software development, computer architecture, embedded systems, and networking.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p> <!-- Added event parameter -->
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p> <!-- Added event parameter -->
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p> <!-- Added event parameter -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Java, C, C++</li>
+                            <li><span>Algorithms and Data Structures</span><br>Strong understanding of algorithms (e.g., searching, sorting) and data structures (e.g., arrays, linked lists, trees, hash maps).</li>
+                            <li><span>Problem Solving and Analytical Skills</span><br>Ability to break down complex problems into manageable components and find efficient solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June -July 2023</span><br>Internship At Softcrowd Technologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>Diploma in Computer Technology</li>
+                            <li><span>Pursuing</span><br>BE in Computer Engineering</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!---------------------------------services---------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Experience</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Internship</h2>
-                <p>During my internship at Softcrowd Technologies, I gained valuable hands-on experience in computer engineering, working on specific tasks, e.g., web Design, system design, etc. I contributed to some tasks, enhancing my skills in programming languages like HTML, CSS, Javascript . 
-                    This internship significantly strengthened my problem-solving abilities and deepened my understanding of  embedded systems, algorithms, etc.
-                </p>
-                <a href="https://www.linkedin.com/posts/abhijit-chavhan-b0263b223_completion-training-on-web-development-activity-7224786819287007232-Vawj?utm_source=share&utm_medium=member_android">Learn More</a>
-            </div>
-            <!-----
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>Software algorithms</h2>
-                <p>information of software services</p>
-                <a href="#">Learn More</a>
-            </div>
-            
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>problem Solving</h2>
-                <p>information of software services</p>
-                <a href="#">Learn More</a>
-            </div>-->
-        </div>
-    </div>
-</div>
-<!----------------portfolio------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/d2.avif">
-                <div class="layer">
-                    <h3>AI Image Generate web</h3>
-                    <p> A platform that converts detailed text descriptions into high-quality images using AI. Users input descriptions, and AI models (like DALL·E or Stable Diffusion) generate corresponding images. Features include real-time rendering, customization, and image download/sharing.</p>
-                    <a href="https://github.com/Abhijitdrag/Quantumpix.ai" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/d3.avif">
-                <div class="layer">
-                    <h3>Game using Python</h3>
-                    <p>The game then compares both choices and determines the winner based on the rules: stone beats scissors, scissors beat paper, and paper beats stone. The game continues until the player chooses to quit.</p>
-                    <a href="https://github.com/Abhijitdrag/game.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/d1.webp">
-                <div class="layer">
-                    <h3>Student management system using C++</h3>
-                    <p>A Student Management System in C++ allows users to add, update, delete, and view student records such as names, roll numbers, and grades. The system typically uses classes and file handling to store student data, enabling efficient management and retrieval of student information.</p>
-                    <a href="https://github.com/Abhijitdrag/student-management-system.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <!---------------------------------services---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Internship</h2>
+                    <p>During my internship at Softcrowd Technologies, I gained valuable hands-on experience in computer engineering, working on specific tasks, e.g., web Design, system design, etc. I contributed to some tasks, enhancing my skills in programming languages like HTML, CSS, Javascript. This internship significantly strengthened my problem-solving abilities and deepened my understanding of embedded systems, algorithms, etc.</p>
+                    <a href="https://www.linkedin.com/posts/abhijit-chavhan-b0263b223_completion-training-on-web-development-activity-7224786819287007232-Vawj?utm_source=share&utm_medium=member_android">Learn More</a>
                 </div>
             </div>
         </div>
-        <a href="https://github.com/Abhijitdrag" class="btn">See More</a>
     </div>
-</div>
-<!---------------contact------------>
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> Abhijitchavhan05@gmail.com</p>
-                <p><i class="fa-solid fa-phone-volume"></i> 9022948347</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/abhijit-chavhan-b0263b223"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://x.com/Sherloked221B?t=rFF4Ps-WGlAnyd6fuDkEJA&s=08"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="https://linktr.ee/Abhijit_chavhan"><i class="fa-solid fa-link"></i></a>
-                    <a href="https://github.com/Abhijitdrag"><i class="fa-brands fa-square-github"></i></a>
+    <!----------------portfolio----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/d2.avif">
+                    <div class="layer">
+                        <h3>AI Image Generate web</h3>
+                        <p>A platform that converts detailed text descriptions into high-quality images using AI. Users input descriptions, and AI models (like DALL·E or Stable Diffusion) generate corresponding images. Features include real-time rendering, customization, and image download/sharing.</p>
+                        <a href="https://github.com/Abhijitdrag/Quantumpix.ai" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <a href="images/resume1.pdf" download class="btn btn2">Download Resume</a>
+                <div class="work">
+                    <img src="images/d3.avif">
+                    <div class="layer">
+                        <h3>Game using Python</h3>
+                        <p>The game then compares both choices and determines the winner based on the rules: stone beats scissors, scissors beat paper, and paper beats stone. The game continues until the player chooses to quit.</p>
+                        <a href="https://github.com/Abhijitdrag/game.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/d1.webp">
+                    <div class="layer">
+                        <h3>Student management system using C++</h3>
+                        <p>A Student Management System in C++ allows users to add, update, delete, and view student records such as names, roll numbers, and grades. The system typically uses classes and file handling to store student data, enabling efficient management and retrieval of student information.</p>
+                        <a href="https://github.com/Abhijitdrag/student-management-system.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="your name" required>
-                    <input type="email" name="Email" placeholder="your email" required>
-                    <textarea name="Message" rows="6" placeholder="your message "></textarea> 
-                    <button type="submit" class="btn btn2">submit</button>
-                </form>
-                <span id="msg">
-                       
-                </span>
-            </div>
+            <a href="https://github.com/Abhijitdrag" class="btn">See More</a>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright © Abhijit Chavhan. All Rights Reserved.<i class="fa-solid fa-copyright"></i></p>
+    <!---------------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> Abhijitchavhan05@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> 9022948347</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abhijit-chavhan-b0263b223"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/Sherloked221B?t=rFF4Ps-WGlAnyd6fuDkEJA&s=08"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://linktr.ee/Abhijit_chavhan"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://github.com/Abhijitdrag"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/resume1.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Abhijit Chavhan. All Rights Reserved.<i class="fa-solid fa-copyright"></i></p>
+        </div>
     </div>
-</div>
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-            for(tablink of tablinks){
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(event, tabname) { <!-- Added event parameter -->
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab")
-    }
-</script>
-<script>
-    var sidemeu=document.getElementById("sidemenu");
-    function openmenu(){
-        sidemeu.style.right="0";
-
-    }
-    function closemenu(){
-        sidemeu.style.right="-200px";
-        
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwLnCmIVx6gCGzWHbYrg8pYYM0__gBjiIkx9A4OuGw1sCGiaNQqgzXxway7xFdxtlRt/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },5000)
-        form.reset()
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu"); <!-- Corrected variable name -->
+        function openmenu() {
+            sidemenu.style.right = "0"; 
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLnCmIVx6gCGzWHbYrg8pYYM0__gBjiIkx9A4OuGw1sCGiaNQqgzXxway7xFdxtlRt/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
 </body>
 </html>
